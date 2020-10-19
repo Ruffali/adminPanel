@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  position: relative;
+  img.back {
+    object-fit: contain;
+    width: 20vw;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .left_link,
+  .right_link {
+    width: 100%;
+    height: 100vh;
+  }
+}

@@ -1,0 +1,48 @@
+@font-face {
+  font-family: UnderType;
+  src: url(../assets/fonts/UnderType-pmOD.otf);
+}
+.student {
+  width: 100%;
+  height: 100vh;
+  background-color: #3f0d12;
+  background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+  position: relative;
+  cursor: pointer;
+  &::before {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: rgba(0, 0, 0, 0.541);
+    transition: all linear 0.5s;
+  }
+  .top {
+    z-index: 5;
+    font-family: UnderType;
+    font-size: 10vw;
+    position: relative;
+    padding-top: 150px;
+    margin: 0 auto;
+    width: fit-content;
+    color: #ffffff;
+    .top_span {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      font-size: 5vw;
+    }
+    .bottom_span {
+      position: absolute;
+      bottom: -30%;
+      left: 0;
+      font-size: 5vw;
+    }
+  }
+  &:hover {
+    &::before {
+      background: rgba(0, 0, 0, 0);
+    }
+  }
+}
